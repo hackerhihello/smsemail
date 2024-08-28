@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy the packaged jar file into the container at /app
-COPY target/sms-0.0.1-SNAPSHOT.jar app.jar
+COPY ./target/sms-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port the application runs on
 EXPOSE 8080
